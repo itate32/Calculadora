@@ -1,0 +1,126 @@
+/* Estilos para centrar la calculadora en la pantalla */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4568DC;
+    background: -webkit-linear-gradient(to bottom, #B06AB3, #4568DC);
+    background: linear-gradient(to bottom, #B06AB3, #4568DC);
+}
+
+/* Estilos de la calculadora */
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%; 
+}
+
+/* Estilos pantalla de calculadora */
+#pantalla {
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Estilos generales de botones */
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* espacio entre filas y columnas */
+}
+
+button {
+    font-size: 1.5em;
+    padding: 20px;
+    background-color: #444;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.igual {
+    grid-row: span 2;
+    background-color: #ff9500;
+    color: white;
+}
+
+.igual:hover {
+    background-color: #e08e00;
+}
+
+.cero {
+    grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+    .calculadora {
+        max-width: 300px;
+        padding: 15px;
+    
+}
+
+#pantalla {
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 12px;
+}
+
+.igual {
+    grid-row: span 2;
+    padding: 25px;
+}
+
+.cero {
+    grid-column: span2;
+}
+}
+
+@media (max-width: 600px) {
+    .calculadora {
+        max-width: 250px;
+        padding: 10px;
+    }
+
+    #pantalla {
+        font-size: 1.5em;
+        padding: 5px;
+    }
+
+    button {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+    .igual {
+        grid-row: span 2;
+        padding: 25px;
+    }
+
+    .cero {
+        grid-column: span 2;
+    }
+}
+
+
